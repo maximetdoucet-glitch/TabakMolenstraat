@@ -29,8 +29,8 @@ export function MobileHero({ tagline, title, description, ctaText }: MobileHeroP
         <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-transparent to-[#fafaf8]" />
       </div>
 
-      {/* Main Content Area - Centered/Lower for face visibility */}
-      <div className="relative z-10 flex flex-col items-center mt-20">
+      {/* Main Content Area - Centered Higher for balanced framing */}
+      <div className="relative z-10 flex flex-col items-center mt-10">
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
