@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# logs & system
+dev_server.log
+dev_server.pid
+*.log
+.DS_Store
