@@ -15,7 +15,7 @@ interface MobileHeroProps {
 
 export function MobileHero({ tagline, title, description, ctaText }: MobileHeroProps) {
   return (
-    <section className="relative flex min-h-[92dvh] w-full flex-col justify-between bg-[#fafaf8] p-6 pt-28">
+    <section className="relative flex min-h-[92dvh] w-full flex-col items-center justify-between bg-[#fafaf8] px-6 pb-12 pt-28 text-center">
       {/* Background Image - Higher Fidelity framing for Mobile */}
       <div className="absolute inset-0 z-0 overflow-hidden opacity-[0.25] grayscale">
         <Image
@@ -30,23 +30,24 @@ export function MobileHero({ tagline, title, description, ctaText }: MobileHeroP
       </div>
 
       {/* Header Area */}
-      <div className="relative z-10">
+      <div className="relative z-10 flex flex-col items-center">
         <motion.div
-          initial={{ opacity: 0, x: -10 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
           className="flex items-center gap-3 mb-6"
         >
-          <span className="h-px w-8 bg-[#C46A2D]" />
-          <span className="text-[10px] font-black uppercase tracking-[0.4em] text-[#C46A2D]">
+          <span className="h-px w-6 bg-[#C46A2D]" />
+          <span className="text-[9px] font-black uppercase tracking-[0.4em] text-[#C46A2D]">
             {tagline}
           </span>
+          <span className="h-px w-6 bg-[#C46A2D]" />
         </motion.div>
 
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="text-6xl font-black uppercase leading-[0.8] tracking-tighter text-[#111]"
+          className="max-w-[320px] text-5xl font-black uppercase leading-[0.85] tracking-tighter text-[#111] break-words xs:text-6xl"
         >
           {title.split(' ')[0]}<br />
           <span className="text-transparent" style={{ WebkitTextStroke: "1px #111" }}>
@@ -56,12 +57,12 @@ export function MobileHero({ tagline, title, description, ctaText }: MobileHeroP
       </div>
 
       {/* Bottom Area - Anchor CTA for thumb ergonomics */}
-      <div className="relative z-10 mt-auto">
+      <div className="relative z-10 mt-auto flex flex-col items-center">
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
-          className="mb-8 max-w-[280px] text-[13px] font-bold leading-relaxed tracking-widest text-[#555]"
+          className="mb-8 max-w-[260px] text-[12px] font-bold leading-relaxed tracking-widest text-[#555]"
         >
           {description}
         </motion.p>

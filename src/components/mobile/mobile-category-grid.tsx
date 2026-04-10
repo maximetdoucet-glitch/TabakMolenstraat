@@ -62,22 +62,14 @@ export function MobileCategoryGrid() {
             transition={{ duration: 0.6, delay: idx * 0.1 }}
             className="group relative flex flex-col"
           >
-            {/* Immersive Image Header */}
-            <div className="relative aspect-[4/3] w-full overflow-hidden border border-[#111]/5 grayscale brightness-90 transition-all duration-700 group-active:grayscale-0 group-active:brightness-100">
-              <img 
-                src={category.image} 
-                alt={category.title}
-                className="h-full w-full object-cover transition-transform duration-1000 group-active:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#111]/80 via-transparent to-transparent" />
-              
-              <div className="absolute bottom-6 left-6 right-6 flex items-end justify-between">
-                <div>
-                  <span className="text-[8px] font-black uppercase tracking-[0.4em] text-white/60 mb-2 block">Premium_{category.index}</span>
-                  <h3 className="text-2xl font-black uppercase tracking-tighter text-white">{category.title}</h3>
-                </div>
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-[#111] shadow-xl">
-                  <ArrowUpRight className="h-4 w-4" />
+            {/* Minimalist Typographic Header */}
+            <div className="relative w-full overflow-hidden border border-[#111]/5 bg-white p-8 transition-all duration-700 group-active:bg-[#111]/5">
+              <div className="flex flex-col items-center text-center">
+                <span className="text-[8px] font-black uppercase tracking-[0.4em] text-[#C46A2D] mb-4 block">Premium_{category.index}</span>
+                <h3 className="text-3xl font-black uppercase tracking-tighter text-[#111]">{category.title}</h3>
+                
+                <div className="mt-8 flex h-12 w-12 items-center justify-center rounded-full border border-[#111]/10 bg-[#fafaf8] text-[#111] shadow-sm transition-transform duration-500 group-active:scale-110">
+                  <ArrowUpRight className="h-5 w-5" />
                 </div>
               </div>
             </div>

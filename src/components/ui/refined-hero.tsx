@@ -117,7 +117,7 @@ export const RefinedBoutiqueHero: React.FC<RefinedBoutiqueHeroProps> = ({
           viewport={{ once: true }}
           variants={fadeInUp}
           transition={{ delay: 0.1 }}
-          className="max-w-4xl text-[2.75rem] font-black uppercase leading-[0.9] tracking-tighter text-[#111] sm:text-7xl md:text-8xl lg:text-[96px]"
+          className="max-w-5xl text-[2.5rem] font-black uppercase leading-[0.9] tracking-tighter text-[#111] break-words sm:text-7xl md:text-8xl lg:text-[96px]"
         >
           {title}
         </motion.h1>

@@ -195,28 +195,8 @@ export default function AssortimentPage() {
                   </motion.p>
                 </div>
 
-                {/* Special Visual for Sigaretten */}
-                {section.id === 'sigaretten' && (
-                  <motion.div 
-                    initial={{ opacity: 0, scale: 0.98 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 1 }}
-                    className="mb-12 sm:mb-16 relative aspect-[16/9] sm:aspect-[21/9] w-full overflow-hidden rounded-xl sm:rounded-2xl grayscale transition-all duration-700 hover:grayscale-0 shadow-xl"
-                  >
-                    <Image 
-                      src="/assets/category_staff_cigarettes.jpg"
-                      alt="Store Information"
-                      fill
-                      className="object-cover transition-transform duration-1000 hover:scale-105"
-                      sizes="(max-width: 768px) 100vw, 1200px"
-                    />
-                    <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-6 sm:p-8">
-                      <p className="text-[9px] sm:text-[10px] font-black uppercase tracking-[0.3em] text-white/90">
-                         {language === 'nl' ? 'Persoonlijke service in hartje Nijmegen' : 'Personal service in the heart of Nijmegen'}
-                      </p>
-                    </div>
-                  </motion.div>
-                )}
+                {/* Spacing Refinement (Removed Image) */}
+                <div className="mb-12" />
 
                 {/* Grid */}
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
