@@ -1,3 +1,5 @@
+'use client';
+// Force rebuild: 2026-04-10T21:37:00Z
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ArrowUpRight } from "lucide-react";
@@ -30,4 +32,3 @@ export function ButtonColorful({
         </Button>
     );
 }
-
