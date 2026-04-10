@@ -96,11 +96,5 @@ export function MobileHero({ tagline, title, description, ctaText }: MobileHeroP
          <span className="text-[60px] font-black leading-none tracking-tighter text-[#111]">EST 68</span>
       </div>
     </section>
-
-      {/* Aesthetic Accents - Subtler scaling */}
-      <div className="absolute bottom-32 right-[-20px] opacity-[0.02] pointer-events-none select-none rotate-90">
-         <span className="text-[80px] font-black leading-none tracking-tighter text-[#111]">EST 68</span>
-      </div>
-    </section>
   );
 }
