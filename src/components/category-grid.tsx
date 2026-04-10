@@ -3,7 +3,7 @@
 import React from 'react';
 import { useLanguage } from '@/components/language-provider';
 import { Card, CardContent } from '@/components/ui/card';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -38,7 +38,7 @@ export function CategoryGrid({ hideHeader = false }: { hideHeader?: boolean }) {
   ];
 
   // Parent container variants for staggered children
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
@@ -49,13 +49,13 @@ export function CategoryGrid({ hideHeader = false }: { hideHeader?: boolean }) {
     },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     show: { 
       opacity: 1, 
       y: 0, 
       transition: { 
-        type: "spring",
+        type: "spring" as const,
         stiffness: 100,
         damping: 25
       } 

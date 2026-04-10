@@ -83,7 +83,7 @@ export function Navbar() {
             initial={{ opacity: 0, x: '100%' }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: '100%' }}
-            transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+            transition={{ type: 'spring' as const, damping: 25, stiffness: 200 }}
             className="fixed inset-0 z-[100] h-screen w-full bg-[#fafaf8] p-8 md:hidden"
           >
             <div className="flex h-full flex-col">

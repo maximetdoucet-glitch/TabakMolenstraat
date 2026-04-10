@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { Navbar } from '@/components/navbar';
 import { Footer } from '@/components/footer';
 import { useLanguage } from '@/components/language-provider';
-import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
+import { motion, useScroll, useSpring, useTransform, Variants } from 'framer-motion';
 import { ArrowLeft, ChevronRight, Check } from 'lucide-react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
@@ -261,7 +261,7 @@ function BrandCard({ brand, index }: { brand: string; index: number }) {
       transition={{ 
         delay: index * 0.05, 
         duration: 0.5,
-        type: "spring",
+        type: "spring" as const,
         stiffness: 100,
         damping: 20
       }}

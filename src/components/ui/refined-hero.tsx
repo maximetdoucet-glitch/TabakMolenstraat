@@ -2,7 +2,7 @@
 
 import React, { useRef, useState } from "react";
 import Image from "next/image";
-import { motion, useSpring, useMotionValue } from "framer-motion";
+import { motion, useSpring, useMotionValue, Variants } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { ButtonColorful } from "@/components/ui/button-colorful";
 
@@ -64,7 +64,7 @@ export const RefinedBoutiqueHero: React.FC<RefinedBoutiqueHeroProps> = ({
   className,
 }) => {
   // Simple, professional reveal animations
-  const fadeInUp = {
+  const fadeInUp: Variants = {
     hidden: { opacity: 0, y: 15 },
     show: { 
       opacity: 1, 
