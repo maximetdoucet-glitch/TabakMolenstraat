@@ -63,14 +63,14 @@ export function CategoryGrid({ hideHeader = false }: { hideHeader?: boolean }) {
   };
 
   return (
-    <section id="collection" className="bg-[#fafaf8] py-24 sm:py-32">
+    <section id="collection" className="bg-[#fafaf8] py-20 sm:py-32">
       <div className="container mx-auto px-4 sm:px-8">
         {!hideHeader && (
-          <div className="mb-20 flex flex-col items-start border-l-4 border-[#C46A2D] pl-8">
-            <span className="text-[11px] font-black uppercase tracking-[0.4em] text-[#555]">
+          <div className="mb-16 sm:mb-20 flex flex-col items-start border-l-4 border-[#C46A2D] pl-6 sm:pl-8">
+            <span className="text-[10px] sm:text-[11px] font-black uppercase tracking-[0.4em] text-[#555]">
               {t.categories.title}
             </span>
-            <h2 className="mt-4 text-4xl font-black uppercase leading-[0.85] tracking-tighter text-[#111] sm:text-5xl lg:text-6xl">
+            <h2 className="mt-4 text-[2.5rem] font-black uppercase leading-[0.9] tracking-tighter text-[#111] sm:text-5xl lg:text-6xl">
               {t.categories.gridTitle}
             </h2>
           </div>
@@ -98,7 +98,7 @@ export function CategoryGrid({ hideHeader = false }: { hideHeader?: boolean }) {
                   {/* Category Index - Large Outlined Numeral */}
                   <div className="absolute top-0 right-0 z-0 p-4 select-none pointer-events-none opacity-[0.03] transition-all duration-700 group-hover:opacity-[0.06] group-hover:scale-110">
                     <span 
-                      className="text-[120px] sm:text-[180px] font-black leading-none text-transparent"
+                      className="text-[100px] sm:text-[180px] font-black leading-none text-transparent"
                       style={{ WebkitTextStroke: "1px #111" }}
                     >
                       {category.index}

@@ -82,7 +82,7 @@ export default function AssortimentPage() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             >
-              <h1 className="text-4xl font-black uppercase leading-[0.85] tracking-tighter text-[#111] sm:text-8xl lg:text-[120px]">
+              <h1 className="text-[2.75rem] font-black uppercase leading-[0.9] tracking-tighter text-[#111] sm:text-8xl lg:text-[120px]">
                 {t.assortmentPage.title.split(' ')[0]}<br />
                 <span className="text-transparent outline-text opacity-40 px-1" style={{ WebkitTextStroke: "1px #111" }}>
                   {t.assortmentPage.title.split(' ')[1] || ''}
@@ -108,8 +108,8 @@ export default function AssortimentPage() {
       </section>
 
       {/* Mobile Horizontal Navigation */}
-      <div className="sticky top-16 z-40 w-full overflow-x-auto bg-[#fafaf8]/80 backdrop-blur-md border-b border-[#111]/5 lg:hidden">
-        <nav className="flex px-4 py-4 space-x-8 min-w-max">
+      <div className="sticky top-16 z-40 w-full overflow-x-auto bg-[#fafaf8]/80 backdrop-blur-md border-b border-[#111]/5 lg:hidden no-scrollbar">
+        <nav className="flex px-4 py-4 space-x-8 min-w-max justify-center sm:justify-start">
           {sections.map((section) => (
             <button
               key={section.id}

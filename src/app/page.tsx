@@ -29,7 +29,7 @@ export default function Home() {
   const y = useTransform(scrollYProgress, [0, 0.3], [40, 0]);
 
   return (
-    <main className="h-screen overflow-y-auto snap-y snap-mandatory scroll-smooth flex flex-col" ref={containerRef}>
+    <main className="min-h-screen overflow-y-auto scroll-smooth flex flex-col sm:h-screen sm:snap-y sm:snap-mandatory" ref={containerRef}>
       <Navbar />
       
       {/* 1. HERO SECTION */}

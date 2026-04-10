@@ -79,7 +79,7 @@ export const RefinedBoutiqueHero: React.FC<RefinedBoutiqueHeroProps> = ({
   return (
     <section
       className={cn(
-        "relative flex h-[100dvh] w-full flex-col items-center justify-center overflow-hidden bg-[#fafaf8] px-6 py-4 sm:py-8 text-center snap-start snap-always",
+        "relative flex min-h-[85dvh] sm:h-[100dvh] w-full flex-col items-center justify-center overflow-hidden bg-[#fafaf8] px-6 py-12 sm:py-8 text-center sm:snap-start sm:snap-always",
         className
       )}
     >
@@ -103,11 +103,11 @@ export const RefinedBoutiqueHero: React.FC<RefinedBoutiqueHeroProps> = ({
           whileInView="show"
           viewport={{ once: true }}
           variants={fadeInUp}
-          className="mb-4 sm:mb-8 flex items-center gap-4 text-[9px] sm:text-[10px] font-black uppercase tracking-[0.5em] text-[#111]/60"
+          className="mb-6 sm:mb-8 flex items-center gap-4 text-[8px] sm:text-[10px] font-black uppercase tracking-[0.4em] sm:tracking-[0.5em] text-[#111]/60"
         >
-          <span className="h-px w-4 sm:w-6 bg-[#C46A2D]/40" />
+          <span className="h-px w-3 sm:w-6 bg-[#C46A2D]/40" />
           {tagline}
-          <span className="h-px w-4 sm:w-6 bg-[#C46A2D]/40" />
+          <span className="h-px w-3 sm:w-6 bg-[#C46A2D]/40" />
         </motion.div>
 
         {/* 2. Main Title: Typography Focal Point */}
@@ -117,7 +117,7 @@ export const RefinedBoutiqueHero: React.FC<RefinedBoutiqueHeroProps> = ({
           viewport={{ once: true }}
           variants={fadeInUp}
           transition={{ delay: 0.1 }}
-          className="max-w-4xl text-4xl font-black uppercase leading-[0.85] tracking-tighter text-[#111] sm:text-7xl md:text-8xl lg:text-[96px]"
+          className="max-w-4xl text-[2.75rem] font-black uppercase leading-[0.9] tracking-tighter text-[#111] sm:text-7xl md:text-8xl lg:text-[96px]"
         >
           {title}
         </motion.h1>
@@ -141,29 +141,27 @@ export const RefinedBoutiqueHero: React.FC<RefinedBoutiqueHeroProps> = ({
           viewport={{ once: true }}
           variants={fadeInUp}
           transition={{ delay: 0.3 }}
-          className="mt-8 sm:mt-12"
+          className="mt-10 sm:mt-12"
         >
-          <Magnetic>
-            <ButtonColorful
-              label={ctaText}
-              onClick={() => {
-                const element = document.getElementById('location');
-                if (element) {
-                  const offset = 80; // Account for navbar
-                  const bodyRect = document.body.getBoundingClientRect().top;
-                  const elementRect = element.getBoundingClientRect().top;
-                  const elementPosition = elementRect - bodyRect;
-                  const offsetPosition = elementPosition - offset;
+          <ButtonColorful
+            label={ctaText}
+            onClick={() => {
+              const element = document.getElementById('location');
+              if (element) {
+                const offset = 80;
+                const bodyRect = document.body.getBoundingClientRect().top;
+                const elementRect = element.getBoundingClientRect().top;
+                const elementPosition = elementRect - bodyRect;
+                const offsetPosition = elementPosition - offset;
 
-                  window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                  });
-                }
-              }}
-              className="h-14 px-12"
-            />
-          </Magnetic>
+                window.scrollTo({
+                  top: offsetPosition,
+                  behavior: 'smooth'
+                });
+              }
+            }}
+            className="h-14 px-12"
+          />
         </motion.div>
       </div>
     </section>

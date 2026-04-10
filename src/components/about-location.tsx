@@ -10,7 +10,7 @@ export function AboutLocation() {
   const { t, language } = useLanguage();
 
   return (
-    <section id="location" className="bg-background py-20 sm:py-32 snap-start snap-always">
+    <section id="location" className="bg-background py-20 sm:py-32 sm:snap-start sm:snap-always">
       <div className="container mx-auto px-4 sm:px-8">
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:items-start lg:gap-24 max-w-7xl mx-auto">
           

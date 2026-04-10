@@ -27,7 +27,7 @@ export function AboutSection() {
   ];
 
   return (
-    <section id="about" className="bg-[#f5f5f3] py-16 sm:py-24 snap-start snap-always">
+    <section id="about" className="bg-[#f5f5f3] py-16 sm:py-24 sm:snap-start sm:snap-always">
       <div className="container mx-auto px-4 sm:px-8">
         <div className="grid grid-cols-1 gap-12 sm:gap-16 lg:grid-cols-12 lg:gap-24">
           {/* Main Text */}

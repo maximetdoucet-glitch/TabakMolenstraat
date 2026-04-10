@@ -8,7 +8,7 @@ export function Footer() {
   const { t, language } = useLanguage();
 
   return (
-    <footer className="bg-[#111111] py-12 sm:py-16 snap-start snap-always">
+    <footer className="bg-[#111111] py-12 sm:py-16">
       <div className="container mx-auto px-4 sm:px-8">
         <div className="grid grid-cols-1 gap-12 border-b border-white/10 pb-12 lg:grid-cols-4 lg:gap-24">
           {/* Business Info */}
