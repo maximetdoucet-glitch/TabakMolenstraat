@@ -41,8 +41,8 @@ export function MobileCategoryGrid() {
   ];
 
   return (
-    <section className="bg-[#fafaf8] py-20 px-10">
-      <div className="mb-12 border-l-4 border-[#C46A2D] pl-6 max-w-[340px] mx-auto">
+    <section className="bg-[#fafaf8] py-20 px-12">
+      <div className="mb-12 border-l-4 border-[#C46A2D] pl-6 max-w-[290px] mx-auto">
         <span className="text-[10px] font-black uppercase tracking-[0.4em] text-[#555]">
           {t.categories.title}
         </span>
@@ -60,9 +60,9 @@ export function MobileCategoryGrid() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.6, delay: idx * 0.1 }}
-            className="group relative flex w-full max-w-[340px] flex-col"
+            className="group relative flex w-full max-w-[290px] flex-col"
           >
-            {/* Minimalist Typographic Header - Ultra Compact */}
+            {/* Minimalist Typographic Header - Ultimate Compact */}
             <div className="relative w-full overflow-hidden border border-[#111]/10 bg-white p-4 transition-all duration-700 group-active:bg-[#111]/5">
               <div className="flex flex-col items-center text-center">
                 <span className="text-[7px] font-black uppercase tracking-[0.4em] text-[#C46A2D] mb-2 block">Premium_{category.index}</span>
