@@ -14,6 +14,11 @@ export function MobileView() {
 
   return (
     <main className="min-h-screen bg-[#fafaf8] overflow-x-hidden">
+      {/* High-Visibility Sync Verification Banner */}
+      <div className="bg-red-600 py-3 text-center sticky top-0 z-[200]">
+        <span className="text-[10px] font-black uppercase tracking-[0.5em] text-white animate-pulse">SYNC VERIFIED - v6.0-RED</span>
+      </div>
+      
       {/* Mobile Navigation */}
       <MobileNav />
 

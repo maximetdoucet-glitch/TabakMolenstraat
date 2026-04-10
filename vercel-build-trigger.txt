@@ -1,0 +1,4 @@
+FORCE VERCEL BUILD TRIGGER
+Timestamp: 2026-04-11T01:32:00Z
+Project: rokerspaleis_lensen
+Status: NUCLEAR SYNC CHECK
