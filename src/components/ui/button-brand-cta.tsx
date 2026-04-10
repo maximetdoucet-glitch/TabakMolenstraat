@@ -4,15 +4,15 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ArrowUpRight } from "lucide-react";
 
-interface ButtonColorfulProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonBrandCTAProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     label?: string;
 }
 
-export function ButtonColorful({
+export function ButtonBrandCTA({
     className,
     label = "Explore Components",
     ...props
-}: ButtonColorfulProps) {
+}: ButtonBrandCTAProps) {
     return (
         <Button
             className={cn(

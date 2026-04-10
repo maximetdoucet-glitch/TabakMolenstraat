@@ -4,7 +4,7 @@ import React, { useRef, useState } from "react";
 import Image from "next/image";
 import { motion, useSpring, useMotionValue, Variants } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { ButtonColorful } from "@/components/ui/button-colorful";
+import { ButtonBrandCTA } from "@/components/ui/button-brand-cta";
 
 // Magnetic effect component for high-end interactivity
 function Magnetic({ children }: { children: React.ReactNode }) {
@@ -143,7 +143,7 @@ export const RefinedBoutiqueHero: React.FC<RefinedBoutiqueHeroProps> = ({
           transition={{ delay: 0.3 }}
           className="mt-10 sm:mt-12"
         >
-          <ButtonColorful
+          <ButtonBrandCTA
             label={ctaText}
             onClick={() => {
               const element = document.getElementById('location');

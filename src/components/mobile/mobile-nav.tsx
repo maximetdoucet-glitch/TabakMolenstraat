@@ -25,7 +25,10 @@ export function MobileNav() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-[100] h-20 bg-[#fafaf8]/80 backdrop-blur-md px-6 flex items-center justify-between border-b border-[#111]/5">
+      <div className="fixed top-0 left-0 right-0 z-[110] bg-[#C46A2D] py-1 text-center">
+        <span className="text-[7px] font-black uppercase tracking-[0.3em] text-white">LATEST BUILD: v5.0-FINAL-RESOLVED</span>
+      </div>
+      <header className="fixed top-6 left-0 right-0 z-[100] h-20 bg-[#fafaf8]/80 backdrop-blur-md px-6 flex items-center justify-between border-b border-[#111]/5">
         <a href="/" className="flex items-center gap-2">
           <span className="h-5 w-1 bg-[#C46A2D]" />
           <span className="text-[10px] font-black uppercase tracking-[0.2em] text-[#111]">Tabak Molenstraat</span>

@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { ButtonColorful } from '@/components/ui/button-colorful';
+import { ButtonBrandCTA } from '@/components/ui/button-brand-cta';
 import { cn } from '@/lib/utils';
 
 interface MobileHeroProps {
@@ -73,7 +73,7 @@ export function MobileHero({ tagline, title, description, ctaText }: MobileHeroP
           transition={{ delay: 0.3 }}
           className="w-full max-w-[280px]"
         >
-          <ButtonColorful 
+          <ButtonBrandCTA 
             label={ctaText}
             onClick={() => {
               const el = document.getElementById('location');
