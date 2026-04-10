@@ -41,8 +41,8 @@ export function MobileCategoryGrid() {
   ];
 
   return (
-    <section className="bg-[#fafaf8] py-20 px-6">
-      <div className="mb-12 border-l-4 border-[#C46A2D] pl-6">
+    <section className="bg-[#fafaf8] py-20 px-10">
+      <div className="mb-12 border-l-4 border-[#C46A2D] pl-6 max-w-[340px] mx-auto">
         <span className="text-[10px] font-black uppercase tracking-[0.4em] text-[#555]">
           {t.categories.title}
         </span>
@@ -51,7 +51,7 @@ export function MobileCategoryGrid() {
         </h2>
       </div>
 
-      <div className="flex flex-col gap-6 sm:gap-10">
+      <div className="flex flex-col gap-10 items-center">
         {categories.map((category, idx) => (
           <motion.a
             key={category.id}
@@ -60,7 +60,7 @@ export function MobileCategoryGrid() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.6, delay: idx * 0.1 }}
-            className="group relative flex flex-col"
+            className="group relative flex w-full max-w-[340px] flex-col"
           >
             {/* Minimalist Typographic Header - Ultra Compact */}
             <div className="relative w-full overflow-hidden border border-[#111]/10 bg-white p-4 transition-all duration-700 group-active:bg-[#111]/5">
@@ -75,7 +75,7 @@ export function MobileCategoryGrid() {
             </div>
 
             {/* Description Area - Micro Spacing */}
-            <div className="mt-4 px-3">
+            <div className="mt-4 px-1">
               <p className="text-[10px] font-bold leading-relaxed text-[#777]">
                 {category.desc}
               </p>

@@ -39,7 +39,7 @@ export function MobileView() {
 
       {/* Deployment Confirmation Badge (Temporary) */}
       <div className="bg-[#111] py-2 text-center">
-        <span className="text-[8px] font-black uppercase tracking-[0.5em] text-white/20">Boutique Deployment v2.0-ULTRA</span>
+        <span className="text-[8px] font-black uppercase tracking-[0.5em] text-white/20">Boutique Deployment v3.0-LOCKED</span>
       </div>
     </main>
   );

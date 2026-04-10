@@ -15,21 +15,21 @@ interface MobileHeroProps {
 
 export function MobileHero({ tagline, title, description, ctaText }: MobileHeroProps) {
   return (
-    <section className="relative flex min-h-[100dvh] w-full flex-col items-center justify-between bg-[#fafaf8] px-6 pb-20 pt-16 text-center overflow-hidden">
-      {/* Background Image - Higher Fidelity framing for Mobile */}
-      <div className="absolute inset-0 z-0 overflow-hidden opacity-[0.25] grayscale">
+    <section className="relative flex h-[100dvh] w-full flex-col items-center justify-between bg-[#fafaf8] px-6 pb-20 pt-16 text-center overflow-hidden">
+      {/* Background Image - Absolute Frame Coverage */}
+      <div className="absolute inset-0 z-0 h-full w-full overflow-hidden opacity-[0.25] grayscale">
         <Image
           src="/assets/category_staff_cigarettes.jpg"
           alt="Boutique Atmosphere"
           fill
-          className="object-cover object-top"
+          className="object-cover object-[50%_15%]"
           priority
         />
         {/* Modern radial gradient for depth */}
         <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-[#fafaf8]" />
       </div>
 
-      {/* Header Area - Brought Up even higher */}
+      {/* Header Area - Top Positioned */}
       <div className="relative z-10 flex flex-col items-center">
         <motion.div
           initial={{ opacity: 0, y: -10 }}
@@ -56,8 +56,8 @@ export function MobileHero({ tagline, title, description, ctaText }: MobileHeroP
         </motion.h1>
       </div>
 
-      {/* Extreme Bottom Area - Anchored at the absolute bottom reach */}
-      <div className="relative z-10 flex flex-col items-center mt-auto">
+      {/* Extreme Bottom Area - Bottom Sited Reach */}
+      <div className="relative z-10 flex w-full flex-col items-center mt-auto">
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

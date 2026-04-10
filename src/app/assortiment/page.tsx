@@ -246,7 +246,7 @@ function BrandCard({ brand, index }: { brand: string; index: number }) {
         damping: 20
       }}
       whileHover={{ y: -5 }}
-      className="group relative flex flex-col overflow-hidden border border-[#111]/10 bg-white transition-all duration-500 hover:border-[#111] hover:shadow-[0_20px_40px_-10px_rgba(0,0,0,0.06)]"
+      className="group relative flex w-full max-w-[340px] mx-auto flex-col overflow-hidden border border-[#111]/10 bg-white transition-all duration-500 hover:border-[#111] hover:shadow-[0_20px_40px_-10px_rgba(0,0,0,0.06)]"
     >
       {/* Visual Area - Typographic & Compliant - Micro Layout */}
       <div className="flex h-20 sm:h-24 w-full items-center justify-center bg-[#fafaf8]/50 p-4 transition-colors group-hover:bg-white border-b border-[#111]/5">
