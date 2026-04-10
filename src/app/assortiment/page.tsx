@@ -222,10 +222,10 @@ export default function AssortimentPage() {
 }
 
 function BrandLogo({ brand }: { brand: string }) {
-  // Purely typographic logo presentation for legal compliance
+  // Purely typographic logo presentation for legal compliance - Refined scaling
   return (
     <div className="flex h-full w-full items-center justify-center">
-       <span className="text-xl font-black uppercase tracking-widest text-[#111]">
+       <span className="text-sm font-black uppercase tracking-[0.4em] text-[#111]">
          {brand}
        </span>
     </div>
@@ -248,15 +248,15 @@ function BrandCard({ brand, index }: { brand: string; index: number }) {
       whileHover={{ y: -5 }}
       className="group relative flex flex-col overflow-hidden border border-[#111]/10 bg-white transition-all duration-500 hover:border-[#111] hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.12)]"
     >
-      {/* Visual Area - Typographic & Compliant */}
-      <div className="flex h-32 w-full items-center justify-center bg-[#fafaf8]/50 p-6 transition-colors group-hover:bg-white border-b border-[#111]/5">
+      {/* Visual Area - Typographic & Compliant - More Compact */}
+      <div className="flex h-24 sm:h-28 w-full items-center justify-center bg-[#fafaf8]/50 p-4 transition-colors group-hover:bg-white border-b border-[#111]/5">
         <BrandLogo brand={brand} />
       </div>
 
-      <div className="z-10 flex flex-col justify-between p-8 pt-6 flex-grow">
+      <div className="z-10 flex flex-col justify-between p-6 pt-5 flex-grow">
         <div className="flex flex-col">
-          <div className="mb-4 h-1 w-6 bg-[#C46A2D] transition-all duration-500 group-hover:w-12" />
-          <h3 className="text-xs font-black uppercase tracking-[0.2em] text-[#111] opacity-40">
+          <div className="mb-3 h-1 w-6 bg-[#C46A2D] transition-all duration-500 group-hover:w-10" />
+          <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-[#111] opacity-60">
             {brand}
           </h3>
           <div className="mt-4 flex items-center gap-2">

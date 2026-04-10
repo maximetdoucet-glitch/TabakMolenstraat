@@ -51,7 +51,7 @@ export function MobileCategoryGrid() {
         </h2>
       </div>
 
-      <div className="flex flex-col gap-16">
+      <div className="flex flex-col gap-8 sm:gap-12">
         {categories.map((category, idx) => (
           <motion.a
             key={category.id}
@@ -62,35 +62,35 @@ export function MobileCategoryGrid() {
             transition={{ duration: 0.6, delay: idx * 0.1 }}
             className="group relative flex flex-col"
           >
-            {/* Minimalist Typographic Header */}
-            <div className="relative w-full overflow-hidden border border-[#111]/5 bg-white p-8 transition-all duration-700 group-active:bg-[#111]/5">
+            {/* Minimalist Typographic Header - More Compact */}
+            <div className="relative w-full overflow-hidden border border-[#111]/10 bg-white p-5 transition-all duration-700 group-active:bg-[#111]/5">
               <div className="flex flex-col items-center text-center">
-                <span className="text-[8px] font-black uppercase tracking-[0.4em] text-[#C46A2D] mb-4 block">Premium_{category.index}</span>
-                <h3 className="text-3xl font-black uppercase tracking-tighter text-[#111]">{category.title}</h3>
+                <span className="text-[7px] font-black uppercase tracking-[0.4em] text-[#C46A2D] mb-3 block">Premium_{category.index}</span>
+                <h3 className="text-xl font-black uppercase tracking-tighter text-[#111]">{category.title}</h3>
                 
-                <div className="mt-8 flex h-12 w-12 items-center justify-center rounded-full border border-[#111]/10 bg-[#fafaf8] text-[#111] shadow-sm transition-transform duration-500 group-active:scale-110">
-                  <ArrowUpRight className="h-5 w-5" />
+                <div className="mt-5 flex h-9 w-9 items-center justify-center rounded-full border border-[#111]/10 bg-[#fafaf8] text-[#111] shadow-sm transition-transform duration-500 group-active:scale-110">
+                  <ArrowUpRight className="h-4 w-4" />
                 </div>
               </div>
             </div>
 
-            {/* Description Area */}
-            <div className="mt-6">
-              <p className="text-[12px] font-bold leading-relaxed text-[#555]">
+            {/* Description Area - Tighter Spacing */}
+            <div className="mt-4 px-2">
+              <p className="text-[11px] font-bold leading-relaxed text-[#666]">
                 {category.desc}
               </p>
-              <div className="mt-6 flex items-center gap-4">
-                 <div className="h-px grow bg-[#111]/5" />
-                 <span className="text-[10px] font-black uppercase tracking-widest text-[#111]">
-                   {language === 'nl' ? 'ONTDEK COLLECTIE' : language === 'en' ? 'EXPLORE COLLECTION' : 'KOLLEKTION ENTDECKEN'}
+              <div className="mt-4 flex items-center gap-4 opacity-40">
+                 <div className="h-px grow bg-[#111]/10" />
+                 <span className="text-[9px] font-black uppercase tracking-widest text-[#111]">
+                   {language === 'nl' ? 'ONTDEK' : language === 'en' ? 'DISCOVER' : 'ENTDECKEN'}
                  </span>
-                 <div className="h-px grow bg-[#111]/5" />
+                 <div className="h-px grow bg-[#111]/10" />
               </div>
             </div>
 
-            {/* High-fidelity numeric accent */}
-            <div className="absolute -top-6 -right-4 -z-10 opacity-[0.03] select-none pointer-events-none">
-              <span className="text-[120px] font-black leading-none text-[#111]">{category.index}</span>
+            {/* High-fidelity numeric accent - More Subtle */}
+            <div className="absolute top-0 right-0 -z-10 opacity-[0.02] select-none pointer-events-none p-2">
+              <span className="text-[80px] font-black leading-none text-[#111]">{category.index}</span>
             </div>
           </motion.a>
         ))}
