@@ -1,7 +1,7 @@
 'use client';
 
 import { useIsMobile } from '@/hooks/use-mobile';
-// Vercel Force Build Trigger: 2026-04-11T00:48:00
+// Vercel Force Build Trigger: 2026-04-11T01:07:00
 import { DesktopView } from '@/components/views/desktop-view';
 import { MobileView } from '@/components/views/mobile-view';
 import { AnimatePresence, motion } from 'framer-motion';
